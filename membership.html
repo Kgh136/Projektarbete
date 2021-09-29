@@ -5,14 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="membership-1.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbarc.css">
     <title>Membership</title>
    
 </head>
 
 <body>
-    <h1 class="member">Join us today, become a member!</h1>
-<form action="results.html" method="GET">
+    <header class="header main-grid">
+        <div class="header-content">
+           <a class="logo-link" href="index.html">
+               <img src="image/Logo.png" alt="" class="logo"> 
+           </a>
+           <div class="container">
+           <form action="/" method="GET" class="form">
+             <input type="text" placeholder="Search" class="search-field" />
+             <button type="submit" class="search-button">
+               <img src="image/search.png" class="cursor">
+             </button>
+           </form>
+         </div> 
+         <div>
+           <button class="donation"><a href="our-pages/donations-page.html">Make a Donation</a></button>
+       </div> 
+          
+       <div class="topnav" id="myTopnav">
+           <a href="#"></a>
+           <a href="#">Home</a>
+           <a href="our-pages/solutions-page.html">Solutions</a>
+           <a href="our-pages/parthership-page.html">Partnerships</a>
+           <a href="our-pages/membership-page.html">Become a Member</a>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fas fa-bars"></i>
+           </a>
+         </div>
+        </div>
+   </header>
+  <!--content-->
+   <main>
+   <section class="container-1">
     <div class="container">
+
+    <h1 class="member">Join us today, become a member!</h1>
+   
+    <form action="results.html" method="GET">
 <form name="formular"id="formular" method="=" post action="">
 
     <label for="fnamn">First name:</label><br/>
@@ -25,10 +61,42 @@
 <input type="email" name="email"id="email" placeholder="Email adress">
 <br>
 
-<input type="submit"name="send"id="send"value="Send">
-
+<input type="submit"name="send"id="send"value="Register">
+</section>
+</main>
+</div>
 </div>
 </form>    
 
+<!---footer-->
+<footer class="footer-distributed"> 
+    <div class="content"> 
+      <div class="top"> 
+        <div class="logo-details"> 
+          <img src="image/Logo.png" alt="WDSD Logo" width="75" height="75"> 
+        </div> 
+        <div class="media-icons"> 
+          <a href="#"><i class="fab fa-facebook-f"></i></a> 
+          <a href="#"><i class="fab fa-twitter"></i></a> 
+          <a href="#"><i class="fab fa-instagram"></i></a> 
+          <a href="#"><i class="fab fa-flickr"></i></a> 
+          <a href="#"><i class="fab fa-youtube"></i></a> 
+        </div> 
+      </div> 
+      <hr class="divider"> 
+      <p class="footer-links"> 
+        <a href="#">HOME</a> 
+        | 
+        <a href="#">CONTACT</a> 
+        | 
+        <a href="#">FRAUD ALERT</a> 
+        | 
+        <a href="#">PRIVACY NOTICE</a> 
+        | 
+        <a href="#">FAQ</a> 
+        | 
+        <a href="#">TERMS OF USE</a> 
+    </p>  
+  </footer> 
 </body>
 </html>

@@ -1,22 +1,22 @@
 @charset "utf-8";
-body{
-    background-color: #8f1962;
-    background-size: cover;
-    margin: 0 10%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
-#container{
-    width: 90%;
-    border: 5px;
-    border-color: #333 ;
-    display: grid;
-}
 .member{
-    color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 52px;
+    color:#0b0a0e;
+    font-family: 'Poppins';
+    font-size: 36px;
     font-display: center;
+}
+#container-1{
+    display: grid;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+}
+#container{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+text-align: center;   
+    
 
 }
 #formular{
@@ -26,16 +26,17 @@ body{
  background-color: rgb(134, 23, 23);
 padding: 20px;
 font-size: 16px;
+font-display: center;
 }
 
 #formular input[type=text]:focus,
 #formular input[type=email]:focus {
-background-color: rgba(253,255,184,1.00);
+background-color: rgb(247, 247, 244);
 width: 100%;
 padding: 10px 5px 10px 10px;
 margin: 5px 0 15px 0;
 display: inline-block;
-border: 1px solid #ccc;
+border: 1px solid rgb(250, 247, 247);
 border-radius: 4px;
 box-sizing: border-box;
 font-size: 18px;
@@ -54,13 +55,7 @@ font-size: 18px;
     font-size: 18px;
 }
 
-#ormular input[type=submit]:hover{
+#formular input[type=submit]:hover{
     background-color: rgba(101,151,222,1.00);
 }
 
-/*Mobil*/
-@media only screen and(max-width: 768px){
-    #formular{
-        width:90%;
-    }
-}
